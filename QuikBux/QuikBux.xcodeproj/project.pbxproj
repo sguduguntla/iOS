@@ -23,6 +23,8 @@
 		9FBB18E01BF866D10010F0AE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB18DF1BF866D10010F0AE /* Security.framework */; };
 		9FBB18E21BF866DF0010F0AE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB18E11BF866DF0010F0AE /* SystemConfiguration.framework */; };
 		9FBB18E71BF867FD0010F0AE /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB18E61BF867FD0010F0AE /* Firebase.framework */; };
+		9FBB18E91BF890410010F0AE /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18E81BF890410010F0AE /* PostViewController.swift */; };
+		9FBB18EB1BF891280010F0AE /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18EA1BF891280010F0AE /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		9FBB18DF1BF866D10010F0AE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9FBB18E11BF866DF0010F0AE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9FBB18E61BF867FD0010F0AE /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = QuikBux/Firebase.framework; sourceTree = "<group>"; };
+		9FBB18E81BF890410010F0AE /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		9FBB18EA1BF891280010F0AE /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +129,10 @@
 				9FBB18A51BF8136A0010F0AE /* AppDelegate.swift */,
 				9FBB18D71BF8664A0010F0AE /* FBController.swift */,
 				9FBB18A71BF8136A0010F0AE /* HomeViewController.swift */,
-				9FBB18D31BF859AC0010F0AE /* SignupViewController.swift */,
-				9FBB18D51BF861860010F0AE /* SignupSecondViewController.swift */,
+				9FBB18EC1BF891C60010F0AE /* Login/Signup */,
+				9FBB18E81BF890410010F0AE /* PostViewController.swift */,
 				9FBB18A91BF8136A0010F0AE /* Main.storyboard */,
+				9FBB18EA1BF891280010F0AE /* PostTableViewCell.swift */,
 				9FBB18AC1BF8136A0010F0AE /* Assets.xcassets */,
 				9FBB18AE1BF8136A0010F0AE /* LaunchScreen.storyboard */,
 				9FBB18B11BF8136A0010F0AE /* Info.plist */,
@@ -165,6 +170,15 @@
 			);
 			name = Frameworks;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		9FBB18EC1BF891C60010F0AE /* Login/Signup */ = {
+			isa = PBXGroup;
+			children = (
+				9FBB18D31BF859AC0010F0AE /* SignupViewController.swift */,
+				9FBB18D51BF861860010F0AE /* SignupSecondViewController.swift */,
+			);
+			name = Login/Signup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FBB18EB1BF891280010F0AE /* PostTableViewCell.swift in Sources */,
+				9FBB18E91BF890410010F0AE /* PostViewController.swift in Sources */,
 				9FBB18D61BF861860010F0AE /* SignupSecondViewController.swift in Sources */,
 				9FBB18D41BF859AC0010F0AE /* SignupViewController.swift in Sources */,
 				9FBB18A81BF8136A0010F0AE /* HomeViewController.swift in Sources */,

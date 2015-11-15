@@ -10,23 +10,18 @@ import UIKit
 
 class SignupSecondViewController: UIViewController, UITextViewDelegate {
 
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var whichLabel: UILabel!
+    @IBOutlet weak var workerImageView: UIButton!
+    @IBOutlet weak var clientImageView: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        descriptionTextView.backgroundColor = UIColor.clearColor()
-    
-        let bottomBorder = UIView()
-        bottomBorder.frame = CGRectMake(descriptionTextView.frame.origin.x, descriptionTextView.frame.origin.y - 10, descriptionTextView.frame.size.height, 1)
-        bottomBorder.backgroundColor = UIColor.whiteColor()
-        self.view.addSubview(bottomBorder)
         
-        let bottomBorder2 = UIView()
-        bottomBorder2.frame = CGRectMake(descriptionTextView.frame.origin.x, descriptionTextView.frame.size.width + 10, descriptionTextView.frame.size.height, 1)
-        bottomBorder2.backgroundColor = UIColor.whiteColor()
-        self.view.addSubview(bottomBorder2)
+        setupUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,10 +29,31 @@ class SignupSecondViewController: UIViewController, UITextViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    
+    
+    
+    
+    
+    func setupUI() {
+        // Text view UI
+        descriptionTextView.backgroundColor = UIColor.clearColor()
+        descriptionTextView.layer.borderColor = UIColor.whiteColor().CGColor
+        descriptionTextView.layer.borderWidth = 1
+        descriptionTextView.layer.cornerRadius = 5
+        
+        // Signup button UI
+        signupButton.backgroundColor = UIColor.clearColor()
+        signupButton.layer.cornerRadius = 5
+        signupButton.layer.borderWidth = 1
+        signupButton.layer.borderColor = UIColor.whiteColor().CGColor
+    }
+    
+    // MARK: UITextViewDelegate
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
     
     /*
     // MARK: - Navigation

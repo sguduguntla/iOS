@@ -28,6 +28,22 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     }
     
     
+    @IBAction func signupContinueButtonPressed(sender: UIButton) {
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     func setupUI() {
         
         // Signup button UI setup

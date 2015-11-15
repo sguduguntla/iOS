@@ -24,15 +24,33 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         setupUI()
-        
-        // Firebase testing
-        FBController.testFB()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // MARK: Button functions
+    @IBAction func loginButtonPressed(sender: UIButton) {
+        
+    }
+    
+    @IBAction func signupButtonPressed(sender: UIButton) {
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     // UI Setup
     func setupUI() {
