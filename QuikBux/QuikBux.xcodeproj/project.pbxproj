@@ -14,6 +14,7 @@
 		9FBB18B01BF8136A0010F0AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FBB18AE1BF8136A0010F0AE /* LaunchScreen.storyboard */; };
 		9FBB18BB1BF8136B0010F0AE /* QuikBuxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18BA1BF8136B0010F0AE /* QuikBuxTests.swift */; };
 		9FBB18C61BF8136B0010F0AE /* QuikBuxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18C51BF8136B0010F0AE /* QuikBuxUITests.swift */; };
+		9FBB18D41BF859AC0010F0AE /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18D31BF859AC0010F0AE /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9FBB18C11BF8136B0010F0AE /* QuikBuxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuikBuxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBB18C51BF8136B0010F0AE /* QuikBuxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuikBuxUITests.swift; sourceTree = "<group>"; };
 		9FBB18C71BF8136B0010F0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FBB18D31BF859AC0010F0AE /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				9FBB18A51BF8136A0010F0AE /* AppDelegate.swift */,
 				9FBB18A71BF8136A0010F0AE /* HomeViewController.swift */,
+				9FBB18D31BF859AC0010F0AE /* SignupViewController.swift */,
 				9FBB18A91BF8136A0010F0AE /* Main.storyboard */,
 				9FBB18AC1BF8136A0010F0AE /* Assets.xcassets */,
 				9FBB18AE1BF8136A0010F0AE /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FBB18D41BF859AC0010F0AE /* SignupViewController.swift in Sources */,
 				9FBB18A81BF8136A0010F0AE /* HomeViewController.swift in Sources */,
 				9FBB18A61BF8136A0010F0AE /* AppDelegate.swift in Sources */,
 			);
