@@ -13,7 +13,6 @@ class HomeViewController: UIViewController {
     // Outlets
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     
@@ -21,12 +20,14 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        signupButton.layer.cornerRadius = 10
+        signupButton.layer.borderWidth = 1
+        signupButton.layer.borderColor = UIColor.blackColor().CGColor
         
-        logoImage.layer.cornerRadius = logoImage.frame.size.height/2
-        logoImage.clipsToBounds = true
-        
-        
+        loginButton.layer.cornerRadius = 10
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.borderColor = UIColor.blackColor().CGColor
     }
 
     override func didReceiveMemoryWarning() {
