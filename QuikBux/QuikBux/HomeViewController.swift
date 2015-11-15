@@ -23,6 +23,19 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
+        
+        // Firebase testing
+        FBController.testFB()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // UI Setup
+    func setupUI() {
         // Email text field UI setup
         emailTextField.backgroundColor = UIColor.clearColor()
         emailTextField.text = ""
@@ -44,7 +57,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         bottomBorder2.frame = CGRectMake(0.0, passwordTextField.frame.size.height - 1, passwordTextField.frame.size.width, 1.0);
         bottomBorder2.backgroundColor = UIColor.whiteColor().CGColor
         passwordTextField.layer.addSublayer(bottomBorder2)
-
+        
         // Signup button UI setup
         signupButton.backgroundColor = UIColor.clearColor()
         signupButton.layer.cornerRadius = 5
@@ -56,12 +69,6 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         loginButton.layer.cornerRadius = 5
         loginButton.layer.borderWidth = 1
         loginButton.layer.borderColor = UIColor.whiteColor().CGColor
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // MARK: UITextFieldDelegate

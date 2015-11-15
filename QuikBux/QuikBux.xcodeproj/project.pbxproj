@@ -15,6 +15,14 @@
 		9FBB18BB1BF8136B0010F0AE /* QuikBuxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18BA1BF8136B0010F0AE /* QuikBuxTests.swift */; };
 		9FBB18C61BF8136B0010F0AE /* QuikBuxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18C51BF8136B0010F0AE /* QuikBuxUITests.swift */; };
 		9FBB18D41BF859AC0010F0AE /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18D31BF859AC0010F0AE /* SignupViewController.swift */; };
+		9FBB18D61BF861860010F0AE /* SignupSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18D51BF861860010F0AE /* SignupSecondViewController.swift */; };
+		9FBB18D81BF8664A0010F0AE /* FBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18D71BF8664A0010F0AE /* FBController.swift */; };
+		9FBB18DA1BF866BA0010F0AE /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB18D91BF866BA0010F0AE /* libicucore.tbd */; };
+		9FBB18DC1BF866C60010F0AE /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB18DB1BF866C60010F0AE /* libc++.tbd */; };
+		9FBB18DE1BF866CB0010F0AE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB18DD1BF866CB0010F0AE /* CFNetwork.framework */; };
+		9FBB18E01BF866D10010F0AE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB18DF1BF866D10010F0AE /* Security.framework */; };
+		9FBB18E21BF866DF0010F0AE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB18E11BF866DF0010F0AE /* SystemConfiguration.framework */; };
+		9FBB18E71BF867FD0010F0AE /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB18E61BF867FD0010F0AE /* Firebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		9FBB18C51BF8136B0010F0AE /* QuikBuxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuikBuxUITests.swift; sourceTree = "<group>"; };
 		9FBB18C71BF8136B0010F0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FBB18D31BF859AC0010F0AE /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		9FBB18D51BF861860010F0AE /* SignupSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupSecondViewController.swift; sourceTree = "<group>"; };
+		9FBB18D71BF8664A0010F0AE /* FBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBController.swift; sourceTree = "<group>"; };
+		9FBB18D91BF866BA0010F0AE /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		9FBB18DB1BF866C60010F0AE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		9FBB18DD1BF866CB0010F0AE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9FBB18DF1BF866D10010F0AE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9FBB18E11BF866DF0010F0AE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9FBB18E61BF867FD0010F0AE /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = QuikBux/Firebase.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FBB18E21BF866DF0010F0AE /* SystemConfiguration.framework in Frameworks */,
+				9FBB18E01BF866D10010F0AE /* Security.framework in Frameworks */,
+				9FBB18E71BF867FD0010F0AE /* Firebase.framework in Frameworks */,
+				9FBB18DE1BF866CB0010F0AE /* CFNetwork.framework in Frameworks */,
+				9FBB18DC1BF866C60010F0AE /* libc++.tbd in Frameworks */,
+				9FBB18DA1BF866BA0010F0AE /* libicucore.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +121,12 @@
 		9FBB18A41BF8136A0010F0AE /* QuikBux */ = {
 			isa = PBXGroup;
 			children = (
+				9FBB18E31BF866F20010F0AE /* Frameworks */,
 				9FBB18A51BF8136A0010F0AE /* AppDelegate.swift */,
+				9FBB18D71BF8664A0010F0AE /* FBController.swift */,
 				9FBB18A71BF8136A0010F0AE /* HomeViewController.swift */,
 				9FBB18D31BF859AC0010F0AE /* SignupViewController.swift */,
+				9FBB18D51BF861860010F0AE /* SignupSecondViewController.swift */,
 				9FBB18A91BF8136A0010F0AE /* Main.storyboard */,
 				9FBB18AC1BF8136A0010F0AE /* Assets.xcassets */,
 				9FBB18AE1BF8136A0010F0AE /* LaunchScreen.storyboard */,
@@ -126,6 +151,20 @@
 				9FBB18C71BF8136B0010F0AE /* Info.plist */,
 			);
 			path = QuikBuxUITests;
+			sourceTree = "<group>";
+		};
+		9FBB18E31BF866F20010F0AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FBB18E11BF866DF0010F0AE /* SystemConfiguration.framework */,
+				9FBB18DF1BF866D10010F0AE /* Security.framework */,
+				9FBB18DD1BF866CB0010F0AE /* CFNetwork.framework */,
+				9FBB18DB1BF866C60010F0AE /* libc++.tbd */,
+				9FBB18D91BF866BA0010F0AE /* libicucore.tbd */,
+				9FBB18E61BF867FD0010F0AE /* Firebase.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FBB18D61BF861860010F0AE /* SignupSecondViewController.swift in Sources */,
 				9FBB18D41BF859AC0010F0AE /* SignupViewController.swift in Sources */,
 				9FBB18A81BF8136A0010F0AE /* HomeViewController.swift in Sources */,
 				9FBB18A61BF8136A0010F0AE /* AppDelegate.swift in Sources */,
+				9FBB18D81BF8664A0010F0AE /* FBController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +444,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuikBux",
+				);
 				INFOPLIST_FILE = QuikBux/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.edu.QuikBux;
@@ -414,6 +459,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuikBux",
+				);
 				INFOPLIST_FILE = QuikBux/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.edu.QuikBux;
