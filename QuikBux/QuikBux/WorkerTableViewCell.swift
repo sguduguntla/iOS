@@ -1,5 +1,5 @@
 //
-//  PostTableViewCell.swift
+//  WorkerTableViewCell.swift
 //  QuikBux
 //
 //  Created by Kiran Kunigiri on 11/15/15.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class PostTableViewCell: UITableViewCell {
-    
+class WorkerTableViewCell: UITableViewCell {
+
     @IBOutlet weak var bgView: UIView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var posterNameLabel: UILabel!
-    
+    @IBOutlet weak var workerNameLabel: UILabel!
+    @IBOutlet weak var occupationsLabel: UILabel!    
+    @IBOutlet weak var descriptionTextView: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

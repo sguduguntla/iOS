@@ -16,7 +16,6 @@
 		9FBB18C61BF8136B0010F0AE /* QuikBuxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18C51BF8136B0010F0AE /* QuikBuxUITests.swift */; };
 		9FBB18D41BF859AC0010F0AE /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18D31BF859AC0010F0AE /* SignupViewController.swift */; };
 		9FBB18D61BF861860010F0AE /* SignupSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18D51BF861860010F0AE /* SignupSecondViewController.swift */; };
-		9FBB18D81BF8664A0010F0AE /* FBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18D71BF8664A0010F0AE /* FBController.swift */; };
 		9FBB18DA1BF866BA0010F0AE /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB18D91BF866BA0010F0AE /* libicucore.tbd */; };
 		9FBB18DC1BF866C60010F0AE /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB18DB1BF866C60010F0AE /* libc++.tbd */; };
 		9FBB18DE1BF866CB0010F0AE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB18DD1BF866CB0010F0AE /* CFNetwork.framework */; };
@@ -25,6 +24,10 @@
 		9FBB18E71BF867FD0010F0AE /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBB18E61BF867FD0010F0AE /* Firebase.framework */; };
 		9FBB18E91BF890410010F0AE /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18E81BF890410010F0AE /* PostViewController.swift */; };
 		9FBB18EB1BF891280010F0AE /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18EA1BF891280010F0AE /* PostTableViewCell.swift */; };
+		9FBB18EE1BF89B530010F0AE /* WorkerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18ED1BF89B530010F0AE /* WorkerTableViewCell.swift */; };
+		9FBB18F01BF89B6E0010F0AE /* WorkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18EF1BF89B6E0010F0AE /* WorkerViewController.swift */; };
+		9FBB18F41BF8A1350010F0AE /* FBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18F31BF8A1350010F0AE /* FBController.swift */; };
+		9FBB18F61BF9147F0010F0AE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB18F51BF9147F0010F0AE /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +63,6 @@
 		9FBB18C71BF8136B0010F0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FBB18D31BF859AC0010F0AE /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		9FBB18D51BF861860010F0AE /* SignupSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupSecondViewController.swift; sourceTree = "<group>"; };
-		9FBB18D71BF8664A0010F0AE /* FBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBController.swift; sourceTree = "<group>"; };
 		9FBB18D91BF866BA0010F0AE /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		9FBB18DB1BF866C60010F0AE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		9FBB18DD1BF866CB0010F0AE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -69,6 +71,10 @@
 		9FBB18E61BF867FD0010F0AE /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = QuikBux/Firebase.framework; sourceTree = "<group>"; };
 		9FBB18E81BF890410010F0AE /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		9FBB18EA1BF891280010F0AE /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		9FBB18ED1BF89B530010F0AE /* WorkerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerTableViewCell.swift; sourceTree = "<group>"; };
+		9FBB18EF1BF89B6E0010F0AE /* WorkerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerViewController.swift; sourceTree = "<group>"; };
+		9FBB18F31BF8A1350010F0AE /* FBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBController.swift; sourceTree = "<group>"; };
+		9FBB18F51BF9147F0010F0AE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,12 +133,13 @@
 			children = (
 				9FBB18E31BF866F20010F0AE /* Frameworks */,
 				9FBB18A51BF8136A0010F0AE /* AppDelegate.swift */,
-				9FBB18D71BF8664A0010F0AE /* FBController.swift */,
+				9FBB18F31BF8A1350010F0AE /* FBController.swift */,
 				9FBB18A71BF8136A0010F0AE /* HomeViewController.swift */,
 				9FBB18EC1BF891C60010F0AE /* Login/Signup */,
-				9FBB18E81BF890410010F0AE /* PostViewController.swift */,
+				9FBB18F11BF89B740010F0AE /* TableViews */,
+				9FBB18F51BF9147F0010F0AE /* ProfileViewController.swift */,
 				9FBB18A91BF8136A0010F0AE /* Main.storyboard */,
-				9FBB18EA1BF891280010F0AE /* PostTableViewCell.swift */,
+				9FBB18F21BF89B810010F0AE /* Cells */,
 				9FBB18AC1BF8136A0010F0AE /* Assets.xcassets */,
 				9FBB18AE1BF8136A0010F0AE /* LaunchScreen.storyboard */,
 				9FBB18B11BF8136A0010F0AE /* Info.plist */,
@@ -179,6 +186,24 @@
 				9FBB18D51BF861860010F0AE /* SignupSecondViewController.swift */,
 			);
 			name = Login/Signup;
+			sourceTree = "<group>";
+		};
+		9FBB18F11BF89B740010F0AE /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				9FBB18E81BF890410010F0AE /* PostViewController.swift */,
+				9FBB18EF1BF89B6E0010F0AE /* WorkerViewController.swift */,
+			);
+			name = TableViews;
+			sourceTree = "<group>";
+		};
+		9FBB18F21BF89B810010F0AE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9FBB18EA1BF891280010F0AE /* PostTableViewCell.swift */,
+				9FBB18ED1BF89B530010F0AE /* WorkerTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,12 +338,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FBB18EB1BF891280010F0AE /* PostTableViewCell.swift in Sources */,
+				9FBB18EE1BF89B530010F0AE /* WorkerTableViewCell.swift in Sources */,
+				9FBB18F61BF9147F0010F0AE /* ProfileViewController.swift in Sources */,
 				9FBB18E91BF890410010F0AE /* PostViewController.swift in Sources */,
 				9FBB18D61BF861860010F0AE /* SignupSecondViewController.swift in Sources */,
 				9FBB18D41BF859AC0010F0AE /* SignupViewController.swift in Sources */,
 				9FBB18A81BF8136A0010F0AE /* HomeViewController.swift in Sources */,
+				9FBB18F41BF8A1350010F0AE /* FBController.swift in Sources */,
 				9FBB18A61BF8136A0010F0AE /* AppDelegate.swift in Sources */,
-				9FBB18D81BF8664A0010F0AE /* FBController.swift in Sources */,
+				9FBB18F01BF89B6E0010F0AE /* WorkerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +493,7 @@
 					"$(PROJECT_DIR)/QuikBux",
 				);
 				INFOPLIST_FILE = QuikBux/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.edu.QuikBux;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -480,6 +509,7 @@
 					"$(PROJECT_DIR)/QuikBux",
 				);
 				INFOPLIST_FILE = QuikBux/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.edu.QuikBux;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,5 +1,5 @@
 //
-//  PostViewController.swift
+//  WorkerViewController.swift
 //  QuikBux
 //
 //  Created by Kiran Kunigiri on 11/15/15.
@@ -8,22 +8,21 @@
 
 import UIKit
 
-class PostViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class WorkerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    var posts: NSDictionary!
+    var workers: [AnyObject]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.allowsSelection = false
 
-        print("I AM IN THE POST HTININGIGN!!!")
-        // Do any additional setup after loading the view        
+        print("I AM IN working thing!!!!")
         
-        FBController.getPosts { (result) -> Void in
-            print("This is the result \(result)")
-            self.posts = result
+        FBController.filterUsers { (arr) -> Void in
+            print("This is the result \(arr)")
+            self.workers = arr
             self.tableView.reloadData()
         }
     }
@@ -34,13 +33,10 @@ class PostViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     
-    
     @IBAction func logoutButtonPressed(sender: UIButton) {
         FBController.logOut()
-        self.performSegueWithIdentifier("postToHomeSegue", sender: self)
+        self.performSegueWithIdentifier("workerToHomeSegue", sender: self)
     }
-    
-    
     
     
     // MARK: Tableview Datasource
@@ -49,11 +45,11 @@ class PostViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         //return 5
-        if posts != nil {
-            return posts.count
+        
+        if workers != nil {
             "There are more posts"
+            return workers.count
         } else {
             print("There are 0 posts")
             return 0
@@ -66,27 +62,30 @@ class PostViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell: PostTableViewCell = tableView.dequeueReusableCellWithIdentifier("postTableViewCell") as! PostTableViewCell
+        let cell: WorkerTableViewCell = tableView.dequeueReusableCellWithIdentifier("workerTableViewCell") as! WorkerTableViewCell
         //cell.selectionStyle = UITableViewCellSelectionStyle.None
         
-        if let results = posts {
-            let post = results.allValues[indexPath.row] as! NSDictionary
+        if let results = workers {
+            print(results)
+            let post = results[indexPath.row]
+            print("THE POST IS ABOUT TO BE")
+            print(post)
             //let post = postArray.allValues as! NSDictionary
             //print(results)
-            cell.titleLabel.text = post.valueForKey("title") as? String
-            cell.descriptionLabel.text = post.valueForKey("description") as? String
-            cell.posterNameLabel.text = post.valueForKey("name") as? String
+            cell.workerNameLabel.text = post.valueForKey("name") as? String
+            cell.descriptionTextView.text = post.valueForKey("description") as? String
+            cell.occupationsLabel.text = post.valueForKey("status") as? String
         }
+        
         
         return cell
     }
+    
     
     // MARK: TableView Delegate
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
     }
-    
-    
     
     
     

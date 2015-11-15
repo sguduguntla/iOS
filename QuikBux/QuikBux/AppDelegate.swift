@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Firebase
+
+// Create a reference to a Firebase location
+let myRootRef = Firebase(url:"https://tempbux.firebaseio.com/")
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -20,6 +20,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         setupUI()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,11 +30,35 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func signupContinueButtonPressed(sender: UIButton) {
-        
+        FBController.signup(emailTextField.text!, password: passwordTextField.text!) { (errorPresent, error) -> Void in
+            if errorPresent {
+                // Error was found
+                switch (error) {
+                case .EmailTaken:
+                    print("Handle invalid user")
+                case .InvalidEmail:
+                    print("Handle invalid email")
+                case .InvalidPassword:
+                    print("Handle invalid password")
+                default:
+                    print("Handle default situation")
+                }
+            } else {
+                // Successful signup
+                print("Everything went fine!")
+                self.performSegueWithIdentifier("continueSignupSegue", sender: self)
+
+            }
+        }
     }
     
-    
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "continueSignupSegue") {
+            let newVC = segue.destinationViewController as! SignupSecondViewController
+            newVC.name = self.nameTextField.text!
+            newVC.city = self.cityTextField.text!
+        }
+    }
     
     
     

@@ -7,25 +7,50 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController, UITextFieldDelegate {
-
+    
     // Outlets
-    @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signupButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     
+    
     // Properties
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        myRootRef.unauth()
+        
         setupUI()
+        
+        FBController.filterUsers { (arr) -> Void in
+            print(arr)
+        }
+        
+        //FBController.uploadPost("Need someone to move my furniture", title: "Mover", name: "Jack")
+        
+        if (myRootRef.authData != nil) {
+            
+            FBController.getUserType { (result) -> Void in
+//            if (type == "worker") {
+//                self.performSegueWithIdentifier("signupToPost", sender: self)
+//            } else if (type == "client") {
+//                self.performSegueWithIdentifier("signupToWorker", sender: self)
+//            }
+        }
+        }
+        
+        
+        
     }
-
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -34,11 +59,40 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Button functions
     @IBAction func loginButtonPressed(sender: UIButton) {
-        
+        FBController.login(emailTextField.text!, password: passwordTextField.text!) { (errorPresent, error) -> Void in
+            if (errorPresent) {
+                // Error was found
+                switch (error) {
+                case .EmailTaken:
+                    print("Handle invalid user")
+                case .InvalidEmail:
+                    print("Handle invalid email")
+                case .InvalidPassword:
+                    print("Handle invalid password")
+                default:
+                    print("Handle default situation")
+                }
+            } else {
+                FBController.getUserType({ (result) -> Void in
+                    if result.valueForKeyPath("type") as! String == "worker"
+                    {
+                        print("IMPORTANT")
+                        print(result.valueForKeyPath("type") as! String)
+                        print("The result is worker so i need to look at posts")
+                        self.performSegueWithIdentifier("loginToPostSegue", sender: self)
+                    } else {
+                        print("The result is client so i need to look at workers")
+                        print("IMPORTANT")
+                        print(result)
+                        self.performSegueWithIdentifier("loginToWorkerSegue", sender: self)
+                    }
+                })
+            }
+        }
     }
     
     @IBAction func signupButtonPressed(sender: UIButton) {
-        
+        self.performSegueWithIdentifier("signupStartSegue", sender: self)
     }
     
     
@@ -93,7 +147,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
-
-
+    
+    
 }
 
